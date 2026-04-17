@@ -3,46 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form One Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f6fa;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0d6efd;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+        }
+        .navbar .brand {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .navbar nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: 500;
+        }
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 1.5rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: #ffffff;
+        }
+        table, th, td {
+            border: 1px solid #c5c7cd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: center;
+        }
+        th {
+            background: #e9ecef;
+        }
+        .note {
+            margin-top: 1rem;
+            text-align: center;
+            color: #333333;
+        }
+    </style>
 </head>
 <body>
-    <center><h2>FORM ONE TIME TABLE</h2></center>
-    <center><table border="1">
-        <tr>
-            <th>DAY</th>
-            <th>8:00-9:00</th>
-            <th>9:00-10:00</th>
-            <th>10:00-11:00</th>
-            <th>11:00-12:00</th>
-            <th>12:00-1:00</th>
-            <th>1:00-2:00</th>
-            <th>2:00-3:00</th>
-        </tr>
-        <tr>
-            <td>MONDAY</td>
-            <td>ENGLISH</td>
-            <td>KISWAHILI</td>
-            <td>MATHS</td> 
-            <td>HISTORY</td>
-            <td>GEOGRAPHY</td>
-            <td>C.R.E</td>
-            <td>BIOLOGY</td>
-        </tr>
-        <tr>
-            <td>TUESDAY</td>
-            <td>ENGLISH</td>
-            <td>KISWAHILI</td>
-            <td>MATHS</td>
-            <td>HISTORY</td>
-            <td>GEOGRAPHY</td>
-            <td>C.R.E</td>
-            <td>BIOLOGY</td>
-        </tr>
-
-    </table>
-    </center>
-   <center> <p>NB: THE TIME TABLE IS SUBJECT TO CHANGE</p></center>
-    <center><p>THANK YOU FOR YOUR ATTENTION</p></center>    
-
+    <header class="navbar">
+        <div class="brand">FORM ONE TIMETABLE</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#timetable">Timetable</a>
+            <a href="#notes">Notes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="content" id="home">
+        <h2 style="text-align: center;">FORM ONE TIME TABLE</h2>
+        <section id="timetable">
+            <table>
+                <tr>
+                    <th>DAY</th>
+                    <th>8:00-9:00</th>
+                    <th>9:00-10:00</th>
+                    <th>10:00-11:00</th>
+                    <th>11:00-12:00</th>
+                    <th>12:00-1:00</th>
+                    <th>1:00-2:00</th>
+                    <th>2:00-3:00</th>
+                </tr>
+                <tr>
+                    <td>MONDAY</td>
+                    <td>ENGLISH</td>
+                    <td>KISWAHILI</td>
+                    <td>MATHS</td>
+                    <td>HISTORY</td>
+                    <td>GEOGRAPHY</td>
+                    <td>C.R.E</td>
+                    <td>BIOLOGY</td>
+                </tr>
+                <tr>
+                    <td>TUESDAY</td>
+                    <td>ENGLISH</td>
+                    <td>KISWAHILI</td>
+                    <td>MATHS</td>
+                    <td>HISTORY</td>
+                    <td>GEOGRAPHY</td>
+                    <td>C.R.E</td>
+                    <td>BIOLOGY</td>
+                </tr>
+            </table>
+        </section>
+        <section class="note" id="notes">
+            <p>NB: THE TIME TABLE IS SUBJECT TO CHANGE</p>
+            <p>THANK YOU FOR YOUR ATTENTION</p>
+        </section>
+    </div>
 </body>
-</html>
+</html> 
